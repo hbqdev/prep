@@ -1,0 +1,8 @@
+build:
+  type: docker
+  image: dockerfile
+predict:
+  - name: predict
+    parameters:
+      - name: input
+        type: string

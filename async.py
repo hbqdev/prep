@@ -18,5 +18,5 @@ async def run_model():
     return results
 
 # Get the results
-results = asyncio.run(run_model())
+#results = asyncio.run(run_model())
 print(results)
