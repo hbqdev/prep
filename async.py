@@ -21,4 +21,3 @@ async def run_model():
 #results = asyncio.run(run_model())
 print(results)
 
-REPLICATE_API_TOKEN="r8_dcCPeRrlNHZ3kNhQZoLY9d06TtlQ8Ov2ul6Ic"
