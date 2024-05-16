@@ -1,0 +1,107 @@
+INFO::2024-05-15 22:22:53::Script started
+DEBUG::2024-05-15 22:22:55::load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG::2024-05-15 22:22:55::load_verify_locations cafile='/home/nightfury/dev/.venv/lib/python3.12/site-packages/certifi/cacert.pem'
+DEBUG::2024-05-15 22:22:55::connect_tcp.started host='api.replicate.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG::2024-05-15 22:22:55::connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fb720225280>
+DEBUG::2024-05-15 22:22:55::start_tls.started ssl_context=<ssl.SSLContext object at 0x7fb72021c6d0> server_hostname='api.replicate.com' timeout=5.0
+DEBUG::2024-05-15 22:22:55::start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fb7c179b9e0>
+DEBUG::2024-05-15 22:22:55::send_request_headers.started request=<Request [b'POST']>
+DEBUG::2024-05-15 22:22:55::send_request_headers.complete
+DEBUG::2024-05-15 22:22:55::send_request_body.started request=<Request [b'POST']>
+DEBUG::2024-05-15 22:22:55::send_request_body.complete
+DEBUG::2024-05-15 22:22:55::receive_response_headers.started request=<Request [b'POST']>
+DEBUG::2024-05-15 22:22:55::receive_response_headers.complete return_value=(b'HTTP/1.1', 201, b'Created', [(b'Date', b'Thu, 16 May 2024 05:22:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'433'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'599'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=mlOz5bfElOAHesnlXKIxB6w3GGmF5GBmXUXSx1Vu5oLJsWUcDxHvc710Jfara%2FrJ7RUBOXOHltzJ5zT1jtHasiwcMm6Do51wEi3Id%2BGLNhHcovfpDiVtKqbPhtrU4gPkmcq0UgXrpi%2Fy3zsGeHTa"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eecbfda37ae5-SJC')])
+INFO::2024-05-15 22:22:55::HTTP Request: POST https://api.replicate.com/v1/predictions "HTTP/1.1 201 Created"
+DEBUG::2024-05-15 22:22:55::receive_response_body.started request=<Request [b'POST']>
+DEBUG::2024-05-15 22:22:55::receive_response_body.complete
+DEBUG::2024-05-15 22:22:55::response_closed.started
+DEBUG::2024-05-15 22:22:55::response_closed.complete
+DEBUG::2024-05-15 22:22:55::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:55::send_request_headers.complete
+DEBUG::2024-05-15 22:22:55::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:55::send_request_body.complete
+DEBUG::2024-05-15 22:22:55::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:56 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'allow', b'GET, DELETE, HEAD, OPTIONS'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'cf-cache-status', b'DYNAMIC'), (b'content-security-policy-report-only', b"connect-src 'report-sample' 'self' https://replicate.delivery https://*.replicate.delivery https://*.rudderlabs.com https://*.rudderstack.com https://*.mux.com https://*.sentry.io; script-src 'report-sample' 'self' https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js https://d31rfu1d3w8e4q.cloudfront.net; frame-src 'self' https://replicatestatus.com; font-src 'report-sample' 'self' data: https://d31rfu1d3w8e4q.cloudfront.net; media-src 'report-sample' 'self' https://replicate.delivery https://*.replicate.delivery https://*.mux.com https://*.sentry.io https://d31rfu1d3w8e4q.cloudfront.net; style-src 'report-sample' 'self' 'unsafe-inline' https://d31rfu1d3w8e4q.cloudfront.net; worker-src 'none'; img-src 'report-sample' 'self' data: https://replicate.delivery https://*.replicate.delivery https://*.githubusercontent.com https://github.com https://d31rfu1d3w8e4q.cloudfront.net; default-src 'self'; report-uri"), (b'cross-origin-opener-policy', b'same-origin'), (b'nel', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'ratelimit-remaining', b'2999'), (b'ratelimit-reset', b'1'), (b'referrer-policy', b'same-origin'), (b'report-to', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=wS0ytojCF%2FPA1%2Bz4yj9iCb%2BMM%2BI2dvFnZdxyruUkkHVaE82wQkuYEOpilEvur2TW9yrCJJn%2BKKWMgRnv7a%2BDpKleNu%2BeqkL%2Bn0Vxb%2F9LodsY1Xz8eBkjGkqRCLEJLQNWJtF7wNB0euc%3D"}],"group":"cf-nel","max_age":604800}'), (b'strict-transport-security', b'max-age=15552000'), (b'vary', b'Cookie, origin'), (b'x-content-type-options', b'nosniff'), (b'x-frame-options', b'DENY'), (b'via', b'1.1 google'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eecc9e1f7ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:56::HTTP Request: GET https://api.replicate.com/v1/models/stability-ai/stable-diffusion/versions/27b93a2413e7f36cd83da926f3656280b2931564ff050bf9575f1fdf9bcd7478 "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:56::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::receive_response_body.complete
+DEBUG::2024-05-15 22:22:56::response_closed.started
+DEBUG::2024-05-15 22:22:56::response_closed.complete
+DEBUG::2024-05-15 22:22:56::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::send_request_headers.complete
+DEBUG::2024-05-15 22:22:56::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::send_request_body.complete
+DEBUG::2024-05-15 22:22:56::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=aKNsGMcZfJCtKP9OVfLj0ofdwVqjxf9dUjt%2BzgYNcvLxr1RM8fPgwE1t%2F8wXzFeL%2BitSNtjPRtn9iwoggk6cnhmCe9fkkspOwg3V1Gp%2F8OBUN5cy4aOMROa0lMiKbHYSCHGdJVi1V9neCjsBygyv"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eed19adb7ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:56::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:56::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:56::receive_response_body.complete
+DEBUG::2024-05-15 22:22:56::response_closed.started
+DEBUG::2024-05-15 22:22:56::response_closed.complete
+DEBUG::2024-05-15 22:22:57::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::send_request_headers.complete
+DEBUG::2024-05-15 22:22:57::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::send_request_body.complete
+DEBUG::2024-05-15 22:22:57::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:57 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2Frvo8ZBph9hqt48OdyGC3THBCjEZKnxYTujDe2x5X52yvZDnhQm3j8%2B32j%2FZluJibGg6p5wqpCrazmX%2BMtOfNLAlUHJpaTvdBG2XSCKs%2BfZXSd9AfO%2BylFjOIVSGNtbAEu8bn7zW7lGIZIBSxlCK"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eed53e167ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:57::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:57::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::receive_response_body.complete
+DEBUG::2024-05-15 22:22:57::response_closed.started
+DEBUG::2024-05-15 22:22:57::response_closed.complete
+DEBUG::2024-05-15 22:22:57::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::send_request_headers.complete
+DEBUG::2024-05-15 22:22:57::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::send_request_body.complete
+DEBUG::2024-05-15 22:22:57::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:58 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=lvLHORITK49nhaBggTJF%2F9hjZH2V%2FHqvD74AjD5wNq6A0u5QFbvYD7GmXfPUyUWKyukej7t1HZEFPoHYuJqOlL5ME8wYSBLv%2BCJKYN%2BzQfFOyP39jxwkdBSoOSz6E4%2BNMzi5yKodvrpnEcYxx5Lb"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eed8c9337ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:57::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:57::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:57::receive_response_body.complete
+DEBUG::2024-05-15 22:22:57::response_closed.started
+DEBUG::2024-05-15 22:22:57::response_closed.complete
+DEBUG::2024-05-15 22:22:58::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:58::send_request_headers.complete
+DEBUG::2024-05-15 22:22:58::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:58::send_request_body.complete
+DEBUG::2024-05-15 22:22:58::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:58::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:58 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=W7sHLEar5DK4BpEO9wdKWfNte3UubTDLMTdoLPZuibW6NMFNwynop7uH2uRGSPM450vCV8aCzZNMNeL34DoU2%2B5uERIEAI5t5xZzqqdxKqFYW%2BzGefS0qeEImKS9%2BIhEi4pTrCtrs0mpbRdieR3g"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eedc6c6c7ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:58::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:58::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:58::receive_response_body.complete
+DEBUG::2024-05-15 22:22:58::response_closed.started
+DEBUG::2024-05-15 22:22:58::response_closed.complete
+DEBUG::2024-05-15 22:22:59::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::send_request_headers.complete
+DEBUG::2024-05-15 22:22:59::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::send_request_body.complete
+DEBUG::2024-05-15 22:22:59::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:59 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=EIekcBy4TFIB%2BjzMC%2Fs0GwDJ8UbL0bP0gQ9bDrGQ%2F%2FmxR3wsdtZYU%2F4LhMaAXxkpNgpE3AHaOYWbwfg%2BACuM%2FsbMmG8Suep2mv459%2FV8isa51LwDonPD6OqoKmzXFC3VgTTsLt8K%2BN5VtJ1y17uT"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eee00fa17ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:59::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:59::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::receive_response_body.complete
+DEBUG::2024-05-15 22:22:59::response_closed.started
+DEBUG::2024-05-15 22:22:59::response_closed.complete
+DEBUG::2024-05-15 22:22:59::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::send_request_headers.complete
+DEBUG::2024-05-15 22:22:59::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::send_request_body.complete
+DEBUG::2024-05-15 22:22:59::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:22:59 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=72cl765ADLNJM5z35v5mn3L1g4oIYFBrOYTQOXmkR8Vi4kisX6%2FzKxuAiRxSlMzFI7bXTUQPvOaH9KwP8jBWGNJhpyJBP%2FMkajYDlE%2FW24AYKab6NQ3PFsJnqA25zB2VA3pGiTNoJ39IsZk7Zmca"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eee3cb367ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:22:59::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:22:59::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:22:59::receive_response_body.complete
+DEBUG::2024-05-15 22:22:59::response_closed.started
+DEBUG::2024-05-15 22:22:59::response_closed.complete
+DEBUG::2024-05-15 22:23:00::send_request_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:23:00::send_request_headers.complete
+DEBUG::2024-05-15 22:23:00::send_request_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:23:00::send_request_body.complete
+DEBUG::2024-05-15 22:23:00::receive_response_headers.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:23:00::receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 16 May 2024 05:23:00 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'ratelimit-remaining', b'59999'), (b'ratelimit-reset', b'1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Report-To', b'{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=8Ai0EWsOnQ%2BIY0ez%2FrAzezjKsLgISmp8zzuDdujcwL34G1ZuziUprtIzHTX1L9chK8XCk1k8FzUCQJD%2FkoITTtxsdikg2mTc3hMfKoaQkiQg2q%2FuOI4CCQc%2FR3nKg4hI0tdbzwBiC%2BgkHZR9nOP4"}],"group":"cf-nel","max_age":604800}'), (b'NEL', b'{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8848eee76ea07ae5-SJC'), (b'Content-Encoding', b'gzip')])
+INFO::2024-05-15 22:23:00::HTTP Request: GET https://api.replicate.com/v1/predictions/48hz7sbvm9rge0cffzd92m62zr "HTTP/1.1 200 OK"
+DEBUG::2024-05-15 22:23:00::receive_response_body.started request=<Request [b'GET']>
+DEBUG::2024-05-15 22:23:00::receive_response_body.complete
+DEBUG::2024-05-15 22:23:00::response_closed.started
+DEBUG::2024-05-15 22:23:00::response_closed.complete
+INFO::2024-05-15 22:23:00::Prediction result: https://replicate.delivery/pbxt/NYf3tKDt5A1bKiLF7jULOftPQrnkMz0TCJOXRCcYecvoRpplA/out-0.png
