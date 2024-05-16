@@ -21,8 +21,9 @@ REPLICATE_API_TOKEN = os.getenv('REPLICATE_API_TOKEN')
 #output = replicate.run(model_version, input=input_data)
 
 def run_tin_test():
-    model_file= "hbqdev/tin-test:d65a7a69b84d17f12d7c47654b6073f433ce71b31e67f7e359a7ea61303529cd"
-    input_data = {"image": open("output.jpg", "rb")}
+    #model_file= "hbqdev/tin-test:d65a7a69b84d17f12d7c47654b6073f433ce71b31e67f7e359a7ea61303529cd"
+    model_file="hbqdev/tin-test2:23a088ba88cfe0163be5dd25ab08184cb509994623d02ae79379d601f73629a3"
+    input_data = {"image": open("input.jpg", "rb")}
     output = replicate.run(model_file, input=input_data)
     print(output)
 # Print the output URL
