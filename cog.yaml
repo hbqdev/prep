@@ -25,6 +25,7 @@ build:
   # run:
   #   - "echo env is ready!"
   #   - "echo another command if needed"
-
+image: "r8.im/hbqdev/tin-test"
 # predict.py defines how predictions are run on your model
 predict: "predict.py:Predictor"
+
